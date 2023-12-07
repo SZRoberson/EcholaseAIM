@@ -1,1 +1,22 @@
 # EcholaseAIM
+# Sean Zachary Roberson
+# December 6, 2023
+# UTSA Department of Mathematics
+# Applied-Industrial Mathematics
+
+This repository hosts the project conducted at Echolase, Inc. during the Fall 2023 term. The project was completed to fulfill the requirements for AIM 6943 - Research and Internship Project.
+
+The file ProcessScans.py hosts the main script in generating the 3-dimensional surface plots of the acoustic field. The data sets collected are hosted on [Google Drive](https://drive.google.com/file/d/1OJMIk6b-3LXQWalutrFAAXdKcxUnhNVG/view?usp=drive_link) as a ZIP archive (~289 MB compressed, ~5.5 GB uncompressed). The script ShowScans.py displays all the scans from the files. This assumes ProcessScans.py is in the same directory.
+
+The description of the project is below, as taken from the first chapter of the final paper.
+
+**Principles of Photoacoustics**
+Lasers have many uses in modern medicine. A common use is in corrective eye surgery, which removes small parts of the cornea to correct astigmatism. Another use is in the imaging of various biological tissues. Through photoacoustic imaging, high resolution images can be created to seek defects in skin, tumors, blood vessels, and vital organs. Echolase, a medical startup based in San Antonio, Texas, has designed a photoacoustic imaging technology to specifically detect ultrasound pulses via a probe beam deflection technique (PBDT). This chapter will provide a background on the principles of photoacoustics and outline the main goals of the project.
+
+**Approach**
+The primary principle of photoacoustics stems from the absorption of light pulses in the target material. When light is directed towards a tissue sample, the irradiated area absorbs the light, is heated, and undergoes a thermoelastic expansion-contraction cycle, thus creating a pressure wave that travels through the sample material and potentially into a surrounding medium, such as a tank of water. The extent and amplitude of this pressure wave can be measured by observing pressure transients in that medium. With short laser pulses in the range of $10^{-9}$ seconds, the frequencies of these pressure waves lie in the ultrasound frequency range of $1$ and $50$ MHz. These ultrasonic waves can then be used to construct a desired image of the tissue to examine any defects. Depending on the duration of the pulse, one can observe various photomechanical, photothermal, and photochemical changes in the desired material to be imaged. Photoacoustic methods have the advantage of being safe and non-invasive, provided the laser exposures are below the limits defined in the ANSI safety standards. This allows for low-energy radiation compared to CT scans and nuclear imaging. The resulting temperature changes induced by the laser are small, approximately a fraction of a degree. An extended introductory treatment can be found in a 2014 paper by L. Li and a 2021 paper by Randolph Glickman. A schematic with the design of Echolase's system is found in a 2016 paper by Saher Maswadi, with a discussion on preliminary findings. Also of interest is how the laser interacts with various tissues, such as skin or muscle. An overview of these interactions along with some experimental results is found in \cite{JacquesNIRB}, with explanations of the scattering properties of lasers at different wavelengths.
+
+**Project Goals**
+For the specific project with Echolase, the research will use test materials to examine the effectiveness of the photoacoustic imaging techniques. To obtain preliminary results, metal test parts with phantom defects (such as holes, cuts, and other imperfections) will be used as subjects in the image reconstruction process. The goal is to use the PBDT detector to provide sharper responses with little interference to create high resolution images as compared to conventional ultrasound imaging methods. To attain this goal, routines will be created using the LabView software suite to control the delivery of the laser to the target material, perform scans of the phantom metals, and create two-dimensional images. 
+
+The project will also serve as a bridge to the applications of mathematics in the research workplace. The goal is to apply skills learned in upper division and graduate courses to solve a research question while collecting information from various sources and creating a significant result. Such a project can serve as a guide for future graduate students in the Applied-Industrial Mathematics program and in other disciplines at the university.
